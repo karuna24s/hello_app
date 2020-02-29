@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0'
+ruby '2.7.0'
+gem 'rails', '~> 6.0.2.1'
 gem "rake", ">= 12.3.3"
 gem "nokogiri", ">= 1.10.8"
 gem "rails-html-sanitizer", ">= 1.0.4"
@@ -50,7 +51,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '0.18.4'
+  gem 'pg', '~> 1.2', '>= 1.2.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
